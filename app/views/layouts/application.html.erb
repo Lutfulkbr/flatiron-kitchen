@@ -6,7 +6,10 @@
   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
   <%= csrf_meta_tags %>
 </head>
-<body>
+<body align="center">
+<%= link_to "Ingredients", ingredients_path %> |
+<%= link_to "Recipes", recipes_path %> |
+<%= link_to "Create Recipe", new_recipe_path %>
 
 <%= yield %>
 
